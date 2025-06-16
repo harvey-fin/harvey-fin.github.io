@@ -66,6 +66,9 @@
                     <h2>Recent News</h2>
                     <ul>
                         <li>
+                            [Jun 2025] We release a new [<a href="https://arxiv.org/abs/2506.11440" style="color:#800000" target="_blank">benchmark</a> that tests language models' capacity to detect missing information over long-context inputs.
+                        </li>
+                        <li>
                             [Oct 2023] Two papers [<a href="https://arxiv.org/abs/2305.14802" style="color:#800000" target="_blank">1</a>, <a href="https://arxiv.org/abs/2305.14947" style="color:#800000" target="_blank">2</a>] are accepted to EMNLP 2023 Findings.
                         </li>
                         <li>
@@ -84,6 +87,48 @@
                     <h2>Publications</h2>
                     <ul class="pl">
                         <li>
+                            <a href="https://arxiv.org/abs/2506.11440" style="color:#800000" target="_blank">
+                                <b>AbsenceBench: Language Models Can't Tell What's Missing</b>
+                            </a>
+                            <br/>
+                            <b>Harvey Yiyun Fu</b>,
+                            <a href="https://www.linkedin.com/in/aryan-shrivastava123" style="color:#800000" target="_blank">Aryan Shrivastava</a>,
+                            <a href="https://jaredmoore.org/" style="color:#800000" target="_blank">Jared Moore</a>,
+                            <a href="https://peterwestai.notion.site/" style="color:#800000" target="_blank">Peter West</a>,
+                            <a href="https://chenhaot.com/" style="color:#800000" target="_blank">Chenhao Tan</a>,
+                            and <a href="https://ariholtzman.com/" style="color:#800000" target="_blank">Ari Holtzman</a>.
+                            <br/>
+                            arxiv preprint
+                            <br/>
+                            <!-- [<a href="papers/dasigi+liu+marasovic+smith+gardner.emnlp2019.bib" target="_blank">bib</a>] -->
+                            [<a href="#" style="color:#800000" onclick="$('#harvey_absence_abstract').toggle();return false;">abstract</a>]
+			                [<a href="https://github.com/harvey-fin/absence-bench" style="color:#800000" target="_blank">code</a>]
+                            <div id="harvey_absence_abstract" class="abstract" style="display:none;">
+                                <p>
+                                    Large language models (LLMs) are increasingly capable of processing 
+                                    long inputs and locating specific information within them, as evidenced 
+                                    by their performance on the Needle in a Haystack (NIAH) test. However, 
+                                    while models excel at recalling surprising information, they still 
+                                    struggle to identify clearly omitted information. We introduce 
+                                    AbsenceBench to assesses LLMs' capacity to detect missing information 
+                                    across three domains: numerical sequences, poetry, and GitHub pull 
+                                    requests. AbsenceBench asks models to identify which pieces of a 
+                                    document were deliberately removed, given access to both the original 
+                                    and edited contexts. Despite the apparent straightforwardness of 
+                                    these tasks, our experiments reveal that even state-of-the-art models 
+                                    like Claude-3.7-Sonnet achieve only 69.6% F1-score with a modest 
+                                    average context length of 5K tokens. Our analysis suggests this poor 
+                                    performance stems from a fundamental limitation: Transformer attention 
+                                    mechanisms cannot easily attend to "gaps" in documents since these 
+                                    absences don't correspond to any specific keys that can be attended to. 
+                                    Overall, our results and analysis provide a case study of the close 
+                                    proximity of tasks where models are already superhuman (NIAH) and 
+                                    tasks where models breakdown unexpectedly (AbsenceBench).
+                                </p>
+                            </div>
+                        </li>
+                        <br/>
+                        <li>
                             <a href="https://arxiv.org/abs/2305.14802" style="color:#800000" target="_blank">
                                 <b>Estimating Large Language Model Capabilities without Labeled Test Data</b>
                             </a>
@@ -98,7 +143,7 @@
                             <br/>
                             <!-- [<a href="papers/dasigi+liu+marasovic+smith+gardner.emnlp2019.bib" target="_blank">bib</a>] -->
                             [<a href="#" style="color:#800000" onclick="$('#harvey_estimating_abstract').toggle();return false;">abstract</a>]
-			    [<a href="https://github.com/harvey-fin/icl-estimate" style="color:#800000" target="_blank">code</a>]
+			                [<a href="https://github.com/harvey-fin/icl-estimate" style="color:#800000" target="_blank">code</a>]
                             <div id="harvey_estimating_abstract" class="abstract" style="display:none;">
                                 <p>
                                     Large Language Models (LLMs) have the impressive ability to perform 
@@ -136,6 +181,7 @@
                             Findings of EMNLP, 2023.
                             <br/>
                             [<a href="#" style="color:#800000" onclick="$('#qinyuan_how_predictable_abstract').toggle();return false;">abstract</a>]
+                            [<a href="https://github.com/INK-USC/predicting-big-bench" style="color:#800000" target="_blank">code</a>]
                             <div id="qinyuan_how_predictable_abstract" class="abstract" style="display:none;">
                                 <p>
                                     We investigate the predictability of large 
@@ -202,7 +248,7 @@
                 <div class="row justify-content-center">
                     <div class="col-6 col-md text-left align-self-center">
                         <p class="h5 text-muted">
-                            Last update: Oct 2, 2024
+                            Last update: Jun 16, 2025
                         </p>
                     </div>
                     <div class="col-6 col-md text-right">
