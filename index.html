@@ -69,6 +69,9 @@
                 I am actively looking for internship opportunities starting Fall 2026. Please feel free to reach out if you think there's a match!
             </li>
             <li>
+                <a href="https://arxiv.org/abs/2606.03928" style="color:#800000" target="_blank">VaSE</a> is accepted to Neurips 2026, See you in Atlanta!
+            </li>
+            <li>
                 [Jun 2026] New blog post: <a href="https://harvey-fin.github.io/seeing-is-not-reasoning/" style="color:#800000" target="_blank">Seeing Is Not Reasoning</a>, on how VLMs and their benchmarks lean on text.
             </li>
             <li>
@@ -107,40 +110,6 @@
                 <div class="col">
                     <h2>Publications</h2>
                     <ul class="pl">
-                        <li>
-                            <a href="https://arxiv.org/abs/2606.03928" style="color:#800000" target="_blank">
-                                <b>Value-Aware Stochastic KV Cache Eviction for Reasoning Models</b>
-                            </a>
-                            <br/>
-                            <a href="https://terarachang.github.io/" style="color:#800000" target="_blank">Ting-Yun Chang</a><sup>*</sup>,
-                            <u><b>Harvey Yiyun Fu</b></u><sup>*</sup>,
-                            <a href="https://deqingfu.github.io/" style="color:#800000" target="_blank">Deqing Fu</a><sup>*</sup>,
-                            <a href="https://yangalan123.github.io/" style="color:#800000" target="_blank">Chenghao Yang</a>,
-                            <a href="https://jessethomason.com/" style="color:#800000" target="_blank">Jesse Thomason</a>,
-                            and <a href="https://robinjia.github.io/" style="color:#800000" target="_blank">Robin Jia</a>.
-                            <br/>
-                            arxiv preprint
-                            <br/>
-                            [<a href="#" style="color:#800000" onclick="$('#harvey_vase_abstract').toggle();return false;">abstract</a>]
-                            <div id="harvey_vase_abstract" class="abstract" style="display:none;">
-                                <p>
-                                    Extended reasoning chains in large language models improve
-                                    performance but create memory and computational constraints.
-                                    This work addresses KV cache efficiency through a training-free
-                                    method called VaSE (Value-aware Stochastic KV Cache Eviction).
-                                    The approach identifies that certain value states possess
-                                    disproportionately large magnitudes whose removal causes model
-                                    failures, and incorporates randomness to enhance cache diversity.
-                                    Testing across six reasoning benchmarks demonstrates that Qwen3
-                                    models implementing VaSE achieve higher average accuracies than
-                                    SOTA selection methods at the same sparsity with 4x compression,
-                                    while surpassing the strongest competing eviction approach by over
-                                    4 percentage points. The method supports FlashAttention2 and enables
-                                    fixed memory consumption during inference.
-                                </p>
-                            </div>
-                        </li>
-                        <br/>
                         <li>
                             <a href="https://arxiv.org/abs/2606.00831" style="color:#800000" target="_blank">
                                 <b>Subliminal Learning is a LoRA Artifact</b>
@@ -199,6 +168,40 @@
                                     humans' more varied output, and struggle to generate low-empathy,
                                     low-formality messages, suggesting that "human-written, LLM-edited" will
                                     likely become the dominant communication mode going forward.
+                                </p>
+                            </div>
+                        </li>
+                        <br/>
+                        <li>
+                            <a href="https://arxiv.org/abs/2606.03928" style="color:#800000" target="_blank">
+                                <b>Value-Aware Stochastic KV Cache Eviction for Reasoning Models</b>
+                            </a>
+                            <br/>
+                            <a href="https://terarachang.github.io/" style="color:#800000" target="_blank">Ting-Yun Chang</a><sup>*</sup>,
+                            <u><b>Harvey Yiyun Fu</b></u><sup>*</sup>,
+                            <a href="https://deqingfu.github.io/" style="color:#800000" target="_blank">Deqing Fu</a><sup>*</sup>,
+                            <a href="https://yangalan123.github.io/" style="color:#800000" target="_blank">Chenghao Yang</a>,
+                            <a href="https://jessethomason.com/" style="color:#800000" target="_blank">Jesse Thomason</a>,
+                            and <a href="https://robinjia.github.io/" style="color:#800000" target="_blank">Robin Jia</a>.
+                            <br/>
+                            NeurIPS 2026
+                            <br/>
+                            [<a href="#" style="color:#800000" onclick="$('#harvey_vase_abstract').toggle();return false;">abstract</a>]
+                            <div id="harvey_vase_abstract" class="abstract" style="display:none;">
+                                <p>
+                                    Extended reasoning chains in large language models improve
+                                    performance but create memory and computational constraints.
+                                    This work addresses KV cache efficiency through a training-free
+                                    method called VaSE (Value-aware Stochastic KV Cache Eviction).
+                                    The approach identifies that certain value states possess
+                                    disproportionately large magnitudes whose removal causes model
+                                    failures, and incorporates randomness to enhance cache diversity.
+                                    Testing across six reasoning benchmarks demonstrates that Qwen3
+                                    models implementing VaSE achieve higher average accuracies than
+                                    SOTA selection methods at the same sparsity with 4x compression,
+                                    while surpassing the strongest competing eviction approach by over
+                                    4 percentage points. The method supports FlashAttention2 and enables
+                                    fixed memory consumption during inference.
                                 </p>
                             </div>
                         </li>
@@ -374,7 +377,7 @@
                 <div class="row justify-content-center">
                     <div class="col-6 col-md text-left align-self-center">
                         <p class="h5 text-muted">
-                            Last update: Jun 15, 2026
+                            Last update: Sep 24, 2026
                         </p>
                     </div>
                     <div class="col-6 col-md text-right">
